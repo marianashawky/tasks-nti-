@@ -1,0 +1,43 @@
+{{>header}}
+
+{{>nav}}
+<section class="Container">
+<div class="row">
+
+
+
+
+    {{#if   err}}
+
+
+<div  class="col-12  alert alert-danger">
+
+error looding data
+
+</div>
+
+ {{/if}}
+
+{{#each getAllData}}
+
+
+<div  class="col-3"  style="margin-top:40px ;">
+
+    <img src="{{this.urlToImage}}" class="img-fluid">
+<a href="{{this.url}}" target="-blank">{{this.title}}</a>
+</div>
+     {{/each}}
+
+
+</div>
+
+   
+
+     
+
+</section>
+
+
+
+
+{{>footer}}
